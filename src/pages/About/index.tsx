@@ -9,7 +9,7 @@ import {
   AUTHOR_GRADUATE_FROM,
 } from '../../data/metadata';
 
-import profilePhoto from '../../assets/images/profile.jpg';
+import profilePhoto from '../../assets/images/profile-template.png';
 
 import { 
   Module,
@@ -34,11 +34,6 @@ const About: FC<PropsType> = function (props) {
   return (
     <Module className="popIn duration-600">
       <Row horizontalAlignCenter>
-        <Column lg="320px">
-          <Profile>
-            <img src={profilePhoto} alt="" />
-          </Profile>
-        </Column>
         <Column lg="320px">
           <Profile>
             <img src={profilePhoto} alt="" />

@@ -1,11 +1,20 @@
+import { PageGetterType } from './types';
+
 import Cover from './Cover';
 import Author from './Author';
 import About from './About';
+import Summary from './Summary';
+import Part1 from './Part1';
 
-const pages = [
-  <Cover />, // ===============INDEX==========> 0
-  <Author />, // ==============INDEX==========> 1
-  <About />, // ===============INDEX==========> 2
-];
+export const getPage: PageGetterType = function (props) {
+  const { pageIndex, pageSetter } = props;
 
-export default pages;
+  if (pageIndex === 0) return <Cover />;
+  if (pageIndex === 1) return <Author />;
+  if (pageIndex === 2) return <About />;
+  if (pageIndex === 3) return <Summary pageSetter={pageSetter} />;
+  if (pageIndex === 4) return <Part1 />;
+  return <div></div>;
+};
+
+export const pagesLength = 5;

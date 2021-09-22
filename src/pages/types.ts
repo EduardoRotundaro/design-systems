@@ -1,3 +1,14 @@
-import { FC } from "react";
+import { FC, ReactElement } from "react";
 
-export type PageType = FC;
+type PageProps = {
+  pageSetter?: (to: number) => void,
+};
+
+export type PageType = FC<PageProps>;
+
+type PageData = {
+  pageSetter: (to: number) => void,
+  pageIndex: number,
+};
+
+export type PageGetterType = (props: PageData) => ReactElement;

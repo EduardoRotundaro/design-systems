@@ -60,182 +60,115 @@ novos componentes.
 
 ||||||||||||||||||||||| Style guide x Pattern library ||||||||||||||||||||||||||
 
-Ao estudar o design, nos deparamos com o Style Guide, que é facilmente 
-confundido com o Design System. Na prática, o Style Guide também compõe com 
-informações dentro do Design System.
+- O design system é um apanhado de informações de várias áreas do design.
 
-O Style Guide ou Guia de estilo é um sistema de organização menor e mais 
-restrito para a parte visual que o Design System. Isso porque ele é responsável 
-por criar um estilo de trabalho de um produto, permitindo que apenas os 
-designers e criadores entendam o que está acontecendo.
+- É um conjunto completo de padrões do projeto, documentação e princípios, 
+juntamente com um kit de ferramentas de design e código.
 
-É como se o Style Guide fosse uma fatia e o Design System uma pizza inteira. O 
-Sistema de Design é um apanhado de informações de várias áreas do design, como 
-o Motion, UI e até códigos de programação.
+- Style guides e pattern libraries são como seções desse conjunto.
 
-A ideia é que o Design System seja um documento que garanta uma melhor 
-consistência nos projetos, produtos e que dialogue com todas as áreas 
-envolvidas, não somente a identidade visual ou com características visuais.
-
-Em um primeiro momento, podemos confundir os conceitos de Design System com 
-Style Guide e Pattern Library. Mas devemos ter muito cuidado para que isso não 
-aconteça.
-
-Essas ferramentas, apesar de parecidas, possuem conceitos, objetivos e 
-complexidades bastante diferentes.
-
-O Design System não é apenas um repositório de componentes de UI Design, como é 
-o Pattern Library. Também não é apenas uma diretriz sobre a parte visual da 
-interface, como é o Style Guide.
-
-Muito além disso, o Design System é uma ferramenta viva que evolui conforme o 
-desenvolvimento e amadurecimento dos projetos de UX Design de uma empresa.
-
-Com esse sistema você saberá utilizar todos os elementos de UI de forma a 
-desenvolver uma interface coerente e consistente, considerando a visão e os 
-objetivos da marca e da empresa.
-
-Utilizar somente um Pattern Library não garante a construção de um resultado 
-consistente. É como se fossem peças de Lego que seriam usadas aleatoriamente, 
-sem uma diretriz.
-
-Design System é o conjunto completo de padrões do projeto, documentação e 
-princípios, juntamente com o kit de ferramentas de design e código para atingir 
-esses padrões.
-
-Pattern Library é uma subclasse no sistema de design, é o conjunto de padrões 
-de design para uso em uma empresa.
-
-Style Guide é outra subclasse no sistema de design. Uma documentação que 
-descreve o próprio sistema de design: como os produtos devem parecer e se 
-comportar, padrões de interface do usuário como tamanho de fonte, cores, botões e etc.
+- Pattern library representa um repositório de componentes de UI Design, e um 
+style guide representa uma diretriz sobre a parte visual da interface.
 
 ||||||||||||||||||||||||||||||| Atomic design ||||||||||||||||||||||||||||||||||
 
-O Atomic Design, como o próprio nome já nos indica, utiliza de uma analogia 
-entre elementos e componentes de um projeto de design com o comportamento dos 
-átomos, moléculas e organismos.
+- O Atomic design é uma metodologia criada por Brad Frost em 2013, que apresenta 
+um paralelo entre a química e componentização de elementos de interface.
 
-Aqui lidamos com os componentes de forma crescente, saindo do menor para o 
-maior. Portanto temos dentro dessa ordem os átomos, moléculas, organismos, 
-templates e páginas (como visto na imagem dentro deste tópico).
+- Essa forma de lidar com os elementos do design resulta em uma metodologia 
+estruturada, racional e lógica de dar função e forma ao projetos, com base 
+conceitual e de forma relativamente simples de entender.
 
-Átomos: aqui podemos incluir ícones, botões, cores, imagens, tipografia etc.
+- É uma metodologia eficiente para a criação de um Design System, uma vez que a 
+equipe terá clareza sobre cada etapa da sua construção. 
 
-Moléculas: aqui seria o resultado da interação dos itens pertencentes a 
+- Na metodologia do atomic design, lidamos com os componentes de forma crescente, 
+saindo do menor para o maior
+
+- Átomos: aqui podemos incluir ícones, botões, cores, imagens, tipografia etc.
+
+- Moléculas: aqui seria o resultado da interação dos itens pertencentes a 
 categoria átomos. Então poderíamos citar como exemplo uma sidebar, um card, uma 
 barra de menu.
 
-Organismos: aqui se enquadra os resultados da interação das moléculas, como 
+- Organismos: aqui se enquadra os resultados da interação das moléculas, como 
 exemplo podemos citar um header de um site, que contém um menu e outros ícones.
 
-Templates: aqui seria o resultado da interação de todos os componentes citados 
+-Templates: aqui seria o resultado da interação de todos os componentes citados 
 anteriormente, montando um produto modelo que pode ser utilizado por qualquer 
 pessoa, sofrendo alguns ajustes.
 
-Páginas: já essa etapa seria mais próximo do produto pronto final, sendo o mais 
+- Páginas: já essa etapa seria mais próximo do produto pronto final, sendo o mais 
 completo do que um template
-
-Essa forma de lidar com os elementos do design, dentro de um projeto, trata-se 
-de uma metodologia estruturada, racional e lógica de dar função e forma ao 
-projetos, com base conceitual e de forma relativamente simples de entender.
-
-O pensamento do Atomic Design encaixa bem com o que se propõe quando estamos 
-criando um Design System. Por isso, um bom caminho para iniciar um sistema de 
-design é justamente começar estudando sobre design atômico.
 
 ||||||||||||||||||||||||||| Os elementos que compõem |||||||||||||||||||||||||||
 
-Objetivos e valores: Antes de pensar em grid, tipografia e cores precisamos 
+- Objetivos e valores: Antes de pensar em grid, tipografia e cores, é preciso 
 pensar nos objetivos e valores da empresa. Esses fundamentos guiarão todas as 
 escolhas feitas, evitando projetos sem coesão com os princípios da instituição.
 
-Guia de Estilo: Aqui os designers irão pensar na identidade visual, seguindo os 
-objetivos e valores. Um guia de estilo é fundamental para definir os princípios 
-de design, identidade da marca, cores, tipografia, etc. Esse é o momento de 
-definir diretrizes, para que todos os designers envolvidos usem as combinações 
-estabelecidas. Em um primeiro momento, isso pode soar como se precisasse seguir 
-rigidamente regras determinadas e deixar de fora a criatividade dos designers. 
-Pode ter certeza que a criatividade não ficará de fora.Na verdade quando esses 
-elementos visuais são definidos, a criatividade será utilizada para definir 
-combinações e como será usado as cores, ilustrações, ícones, tipografias, 
-animações – por exemplo – criando, assim, uma identidade visual coesa.
+- Guia de Estilo: É pensada a identidade visual, seguindo os objetivos e valores. 
+Um guia de estilo é fundamental para definir os princípios de design, identidade 
+da marca, cores, tipografia...
 
-Biblioteca de componentes e padrões: Após ter estabelecido a identidade visual, 
-é hora de definir como será construído esse projeto e, nesse momento, uma 
-biblioteca de componentes e padrões podem ajudar. Na prática, uma biblioteca de 
-componentes e padrões são elementos que serão utilizados no desenvolvimento de 
-um produto. Imagine que você precise de um componente para criar um site, por 
-exemplo, e lembra especificamente de um que utilizou em projetos anteriores. 
-Até você procurar os projetos que ele foi utilizado, observar como ele se 
-comporta, custaria um tempo precioso dentro do seu prazo. Para aumentar sua 
-produtividade, uma boa solução é ter em mãos todos os componentes e padrões que 
-serão utilizados na construção do seu produto. Para criar essa biblioteca podem 
-entrar desenvolvedores e UI Designers.Os componentes e padrões são essenciais 
-na construção do sistema e em como ele irá funcionar. Ui/Web kit: esses seriam 
-um kit desses componentes citados acima, interligados, formando um template 
-construídos com base nos componentes do sistema. Portanto, estamos falando sobre 
-UI kit, que seria um kit de componentes de UI Design citados acima, e também 
-estamos falando sobre os estados dos componentes que aqui é relativo ao estado 
-dos componentes citados, se estão ativos, se são o padrão, se estão inativos, 
-dentre outros. Ao criar uma biblioteca com esses elementos, você irá garantir 
-uma experiência consistente no seu produto. Não acaba por aqui, você pode 
-adicionar mais informações que achar necessário. Isto é somente um pontapé 
-inicial, ajudando a condensar todas as ideias, princípios e valores da empresa 
-em todos os seus produtos.
+- Biblioteca de componentes e padrões: Após definido a identidade visual, é hora 
+de construir os elementos que serão utilizados no desenvolvimento de um produto. 
+Na criação dessa biblioteca, entram desenvolvedores e UI Designers. 
 
-Códigos: Dependendo do projeto podemos incluir padrões de códigos, como nome de 
-classes, ids, indentação, formatação e organização. Um projeto de um sistema de 
-design pode lidar com a integração entre design e a parte de desenvolvimento 
-front-end. É super importante, quando há a necessidade, que a integração entre 
-as áreas para que o Design System funcione como o esperado. Apesar do nome 
-(Design System) poder lembrar em um primeiro momento apenas a questão visual, 
-design não se trata apenas disso e questão funcional também é importante.
+- Códigos: Se adequado aos projetos, design systems podem incluir padrões de 
+códigos, como nome de classes, ids, indentação, formatação e organização. Um 
+projeto de um sistema de vai lidar com a integração entre design e a parte de 
+desenvolvimento front-end, por isso é importante que funcione como o esperado.
+
+- Documentação: A documentação é o que vai diferenciar o Design System de um 
+simples repositório ou Pattern Library. As documentações devem conter todas as 
+regras do que fazer e do que não fazer e devem ser de fácil entendimento, para 
+garantir que todos os estilos e interações estejam alinhados. É importante lembrar
+que o produto pode (e deve) sofrer constantes mudanças e atualizações, sem perder 
+sua consistência.
 
 ||||||||||||||||||||||||||||||||| Como começar |||||||||||||||||||||||||||||||||
 
-Product principles: Qual é o propósito e a alma por trás de todos os produtos?
+- Product principles: Qual é o propósito e a alma por trás de todos os produtos?
 
-Written content: Como deve ser a aparência e comportamento da interface do 
+- Written content: Como deve ser a aparência e comportamento da interface do 
 produto?
 
-Visual properties: Como deve ser a “aparência” do produto?
+- Visual properties: Como deve ser a “aparência” do produto?
 
-Components: Quais são os padrões da interface do usuário e os componentes de 
+- Components: Quais são os padrões da interface do usuário e os componentes de 
 código necessários para criar produtos de maneira coerente em todos os 
 dispositivos?
+
+||||||||||||||||||||||||||||||||| Guia rápido |||||||||||||||||||||||||||||||||
 
 - Discovery: Conhecer a marca e quais são os valores que estão envolvidos e as 
 pessoas que fazem parte dentro dessa organização. É bom olhar os projetos e 
 produtos existentes, e como eles vão ser afetados nessa criação inicial do 
 design system.
 
-- Design: Depois de absorver e ouvir designers, stakeholders e usuários, reúna 
+- Design: Depois de absorver e ouvir designers, stakeholders e usuários, reunir 
 os dados para construção dos pilares (princípios) do seu design system. 
-Princípios são seus objetivos macros. Para identificar o princípio, observe o 
-que você coletou do problema e pergunte: “O que queremos atingir e qual o nosso 
-propósito?”
 
-- É bom alinhar as expectativas de equipe de front-end, que materializará esses 
-componentes, codificando e definindo questões técnicas para seu 
-compartilhamento. Um design system não codado não se mantém vivo sozinho. Seja 
-amigo do desenvolvedor e ajude na cocriação.
+- Desenvolvimento: Alinhar as expectativas com os desenvolvedores, que irão 
+materializar esses componentes, codificando e definindo questões técnicas para seu 
+compartilhamento. 
 
-- Show de bola, temos um design system bem definido, temos designers, devs e 
-stakeholders olhando o nosso produto, mas como essas pessoas vão usá-lo? Crie 
-uma documentação acessível e disponibilize em algum lugar onde todos os 
-envolvidos possam ver.
+- Documentação: O Design System é único para toda a empresa. Criar uma 
+documentação acessível e alocar a ferramenta em um local acessível para todos.
 
 ||||||||||||||||||||||||||||| Considerações Finais |||||||||||||||||||||||||||||
 
-Percebemos que o Design System é uma forma de organização para grandes empresas 
-que não é novidade. Novidade mesmo é sua forma de uso na atualidade, aplicada a 
-produtos digitais. O uso desse sistema traz inúmeros benefícios para o produto, 
-bem como para a equipe engajada no projeto, permitindo que todos contribuam para 
-o produto final, mesmo tendo visões e profissões diversas, mantendo a 
-consistência do projeto. Por isso, o Design System possui inúmeros benefícios, 
-tais como dinamicidade, fácil atualização, redução de custos e de tempo de 
-trabalho, otimização de tarefas e da força de trabalho, dentre outros.
+- A ideia é que o Design System seja um documento que garanta uma melhor 
+consistência nos produtos, e que dialogue com todas as áreas envolvidas e não 
+somente a parte visual.
+
+- É uma ferramenta viva que evolui conforme o desenvolvimento e amadurecimento 
+dos projetos de UX Design de uma empresa.
+
+- O resultado tem diversos benefícios, tais como dinamicidade, fácil atualização, 
+redução de custos e de tempo de trabalho, otimização de tarefas e da força de 
+trabalho, interfaces coerentes e consistentes, entre outros.
 
 |||||||||||||||||||||||||||||||||||| Links |||||||||||||||||||||||||||||||||||||
 

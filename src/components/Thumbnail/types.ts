@@ -1,7 +1,8 @@
-import { FC, ReactNode } from "react";
+import { FC } from 'react';
 
 type ComponentProps = {
-  children: ReactNode,
+  imageSrc: string,
+  imageAlt: string,
 };
 
 export type ComponentType = FC<ComponentProps>;

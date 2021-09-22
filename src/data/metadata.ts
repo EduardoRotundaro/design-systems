@@ -20,8 +20,8 @@ export const AUTHOR_GRADUATION: ConstantType = 'Engenharia de computação (2019
 
 export const AUTHOR_GRADUATE_FROM: ConstantType = 'Instituto Nacional de Telecomunicações';
 
-export const CONTENT_NAME: ConstantType = 'Mussum Ipsum';
+export const CONTENT_NAME: ConstantType = 'Design Systems';
 
 export const CONTENT_DATE: ConstantType = 'Setembro/2021';
 
-export const PROJECT_REPOSITORY: ConstantType = 'https://github.com/EduardoRotundaro/';
+export const PROJECT_REPOSITORY: ConstantType = 'https://github.com/EduardoRotundaro/design-systems';

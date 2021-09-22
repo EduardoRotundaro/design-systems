@@ -1,20 +1,20 @@
-import { FC } from 'react';
+import { ComponentType } from './types';
+import { ComponentContainer, Card } from './styles';
 
-type PropsType = {
-  url: string,
-};
-
-import { Container } from './styles';
-
-const ProfileImage: FC<PropsType> = function (props) {
-  const {
-    url,
-  } = props;
+const ProfileImage: ComponentType = function (props) {
+  const { imageSrc, profileName } = props;
 
   return (
-    <Container>
-      <img src={url} alt="" />
-    </Container>
+    <ComponentContainer>
+      <Card>
+        <div className="image">
+          <img src={imageSrc} alt={`Foto de ${profileName}`} />
+        </div>
+        <div className="name">
+          <h2>{profileName}<br/><span>Autor</span></h2>
+        </div>
+      </Card>
+    </ComponentContainer>
   );
 };
 

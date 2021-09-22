@@ -1,14 +1,13 @@
-import { useState } from 'react';
+import { FC, useState } from 'react';
 
-import { CONTENTS } from './data/content';
+import pages from './pages';
 import NavigationButton from './components/NavigationButton';
-import Page from './Page';
 
-function App() {
+const App: FC = function () {
   const [page, setPage] = useState(0);
 
   const nextAction = function () {
-    if (page < (CONTENTS.length - 1)) setPage(page + 1);
+    if (page < (pages.length - 1)) setPage(page + 1);
   };
 
   const prevAction = function () {
@@ -24,8 +23,8 @@ function App() {
           onClick={prevAction}
         />
       )}
-      <Page content={CONTENTS[page]} />
-      {(page < (CONTENTS.length - 1)) && (
+      {pages[page]}
+      {(page < (pages.length - 1)) && (
         <NavigationButton 
           action="next"
           disabled={false}

@@ -1,6 +1,6 @@
 import { ContentsType } from './types';
 
-const TITLE = 'Mussum Ipsum';
+// const TITLE = 'Mussum Ipsum';
 
 // const LINE = 'Mussum Ipsum, cacilds vidis litro abertis.';
 

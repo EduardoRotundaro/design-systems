@@ -9,7 +9,7 @@ import {
   AUTHOR_LINKEDIN,
 } from '../../data/metadata';
 
-import profilePhoto from '../../assets/images/profile-template.png';
+import profilePhoto from '../../assets/images/profile-1.webp';
 
 import { 
   Module,

@@ -9,7 +9,8 @@ import {
   AUTHOR_GRADUATE_FROM,
 } from '../../data/metadata';
 
-import profilePhoto from '../../assets/images/profile-template.png';
+import profilePhoto1 from '../../assets/images/profile-2.webp';
+import profilePhoto2 from '../../assets/images/profile-3.webp';
 
 import { 
   Module,
@@ -36,12 +37,12 @@ const About: FC<PropsType> = function (props) {
       <Row horizontalAlignCenter>
         <Column lg="320px">
           <Profile>
-            <img src={profilePhoto} alt="" />
+            <img src={profilePhoto1} alt="" />
           </Profile>
         </Column>
         <Column lg="320px">
           <Profile>
-            <img src={profilePhoto} alt="" />
+            <img src={profilePhoto2} alt="" />
           </Profile>
         </Column>
       </Row>

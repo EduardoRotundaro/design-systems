@@ -15,7 +15,7 @@ const CONTENT = 'Falando de produtos digitais (um app ou um site), é comum enco
 
 const Part2P1: PageType = function () {
   return (
-    <Page background="2">
+    <Page background="1">
       <Module>
         <Row>
           <Column>

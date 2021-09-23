@@ -15,7 +15,7 @@ const CONTENT = 'Idéias novas sempre surgem em novos produtos, como por exemplo
 
 const Part2P2: PageType = function () {
   return (
-    <Page background="2">
+    <Page background="3">
       <Module>
         <Row>
           <Column>

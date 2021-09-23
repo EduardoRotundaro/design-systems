@@ -11,7 +11,7 @@ export const ComponentContainer = styled.div`
 export const Line = styled.span<ColorProps>`
   background: ${props => {
     if (props.light) return '#b2babb';
-    return '#707b7c';
+    return '#485460';
   }};
   height: 2px;
 
@@ -23,7 +23,7 @@ export const Line = styled.span<ColorProps>`
 export const Title = styled.h3<ColorProps>`
   color: ${props => {
     if (props.light) return '#b2babb';
-    return '#707b7c';
+    return '#485460';
   }};
   font-family: ${props => props.theme.fonts.secondary};
   font-weight: 600;

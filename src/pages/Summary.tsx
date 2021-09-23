@@ -18,7 +18,7 @@ const Summary: PageType = function (props) {
   };
 
   return (
-    <Page background="1">
+    <Page background="2">
       <Module>
         <Row>
           <Column>

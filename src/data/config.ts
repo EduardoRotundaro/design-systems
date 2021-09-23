@@ -6,11 +6,11 @@ export const APP_VERSION: ConstantType = packageInfos.version;
 
 export const THEME: ComponentsThemeType = {
   colors: {
-    theme1: '#ECA400',
-    theme2: '#EAF8BF',
-    theme3: '#006992',
-    theme4: '#27476E',
-    theme5: '#001D4A',
+    theme1: '#00d8d6',
+    theme2: '#0fbcf9',    
+    theme3: '#ffdd59',
+    theme4: '#ffc048',
+    theme5: '#05c46b',
     white: '#FDFEFE',
     gray: '#ECF0F1',
     black: '#17202A',

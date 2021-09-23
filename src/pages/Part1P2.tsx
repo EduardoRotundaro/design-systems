@@ -15,7 +15,7 @@ const CONTENT = 'Geralmente contém coleções de documentos, artigos, exemplos,
 
 const Part1P2: PageType = function () {
   return (
-    <Page background="2">
+    <Page background="3">
       <Module>
         <Row>
           <Column>

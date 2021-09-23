@@ -15,7 +15,7 @@ const CONTENT = 'É importante estabelecer processos e desenvolver ferramentas q
 
 const Part2P4: PageType = function () {
   return (
-    <Page background="2">
+    <Page background="4">
       <Module>
         <Row>
           <Column>

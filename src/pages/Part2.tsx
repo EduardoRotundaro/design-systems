@@ -13,7 +13,7 @@ const Module = styled.div`
 
 const Part2: PageType = function () {
   return (
-    <Page background="2">
+    <Page background="5">
       <Module>
         <Row>
           <Column>
@@ -22,7 +22,7 @@ const Part2: PageType = function () {
         </Row>
         <Row>
           <Column>
-            <H1 color="black" weight="heavy">Pra que isso?</H1>
+            <H1 color="white" weight="heavy">Pra que isso?</H1>
           </Column>
         </Row>
       </Module>

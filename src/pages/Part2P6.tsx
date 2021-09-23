@@ -15,7 +15,7 @@ const CONTENT = 'É disponibilizado para toda a equipe (do design ao desenvolvim
 
 const Part2P6: PageType = function () {
   return (
-    <Page background="2">
+    <Page background="3">
       <Module>
         <Row>
           <Column>

@@ -15,7 +15,7 @@ const CONTENT = 'Um DS é criado então como um produto vivo, com padões visuai
 
 const Part2P5: PageType = function () {
   return (
-    <Page background="2">
+    <Page background="1">
       <Module>
         <Row>
           <Column>

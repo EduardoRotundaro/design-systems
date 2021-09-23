@@ -15,7 +15,7 @@ const CONTENT = 'Design systems são ecossistemas de bibliotecas intaláveis, co
 
 const Part1P1: PageType = function () {
   return (
-    <Page background="2">
+    <Page background="1">
       <Module>
         <Row>
           <Column>

@@ -16,7 +16,7 @@ const Module = styled.div``;
 
 const Cover: PageType = function () {
   return (
-    <Page background="1">
+    <Page background="5">
       <Module>
         <Row>
           <Column>

@@ -10,11 +10,11 @@ const ChapterName: ComponentType = function (props) {
   
   return (
     <ComponentContainer>
-      <Line />
+      <Line light={light} />
       <Title light={light}>
         {children}
       </Title>
-      <Line />
+      <Line light={light} />
     </ComponentContainer>
   );
 }; 

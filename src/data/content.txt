@@ -37,10 +37,6 @@ melhora essa consistência de todos os produtos.
 - É disponibilizado para toda a equipe (do design ao desenvolvimento) para que, 
 além de tudo, possa garantir uniformidade na experiência final do usuário.
 
-- E uma consequência boa, é que DS ajudam empresas e grupos de profissionais a 
-construir melhores produtos com mais rapidez e menos custo, tornando a 
-complexidade mais simples.
-
 ||||||||||||||||||||||||||||||| Exemplificando |||||||||||||||||||||||||||||||||
 
 - Pensar em DS, é como pensar em LEGOs. Imagine um projeto novo como algo a ser

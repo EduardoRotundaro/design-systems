@@ -82,7 +82,7 @@ export const Card = styled.div`
       span{
         font-weight: 500;
         font-size: 16px;
-        color: ${props => props.theme.colors.theme1};
+        color: ${props => props.theme.colors.theme5};
         display: block;
         margin-top: 5px;
       }

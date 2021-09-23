@@ -1,0 +1,44 @@
+import styled from "styled-components";
+
+import { PageType } from '../types';
+
+import Page from '../../Page';
+import Row from '../../components/Row';
+import Column from '../../components/Column';
+import ChapterName from '../../components/ChapterName';
+import P from '../../components/P';
+
+const Module = styled.div`
+`;
+
+const CONTENT = 'Como deve ser a “aparência” do produto?';
+
+const Part7P3: PageType = function () {
+  return (
+    <Page background="2">
+      <Module>
+        <Row>
+          <Column>
+            <ChapterName>Como começar?</ChapterName>
+          </Column>
+        </Row>
+        <Row horizontalAlignCenter>
+          <Column lg="80%">
+            <P color="black" size="extra-large" weight="bolder">
+              Visual properties
+            </P>
+          </Column>
+        </Row>
+        <Row horizontalAlignCenter>
+          <Column lg="80%">
+            <P color="black" size="extra-large">
+              {CONTENT}
+            </P>
+          </Column>
+        </Row>
+      </Module>
+    </Page>
+  );
+};
+
+export default Part7P3;

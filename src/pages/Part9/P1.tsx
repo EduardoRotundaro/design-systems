@@ -1,0 +1,37 @@
+import styled from "styled-components";
+
+import { PageType } from '../types';
+
+import Page from '../../Page';
+import Row from '../../components/Row';
+import Column from '../../components/Column';
+import P from '../../components/P';
+import ChapterName from '../../components/ChapterName';
+
+const Module = styled.div`
+`;
+
+const CONTENT = 'A ideia é que o Design System seja um documento que garanta uma melhor consistência nos produtos, e que dialogue com todas as áreas envolvidas e não somente a parte visual.';
+
+const Part9P1: PageType = function () {
+  return (
+    <Page background="1">
+      <Module>
+        <Row>
+          <Column>
+            <ChapterName>Considerações finais</ChapterName>
+          </Column>
+        </Row>
+        <Row horizontalAlignCenter>
+          <Column lg="80%">
+            <P color="black" size="large">
+              {CONTENT}
+            </P>
+          </Column>
+        </Row>
+      </Module>
+    </Page>
+  );
+};
+
+export default Part9P1;

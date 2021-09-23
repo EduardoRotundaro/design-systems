@@ -1,0 +1,52 @@
+import styled from "styled-components";
+
+import { PageType } from '../types';
+
+import legoPieces from '../../assets/images/pieces-lego.webp';
+
+import Page from '../../Page';
+import Row from '../../components/Row';
+import Column from '../../components/Column';
+import P from '../../components/P';
+import ChapterName from '../../components/ChapterName';
+import ImageContainer from '../../components/ImageContainer';
+
+const Module = styled.div`
+`;
+
+const CONTENT = 'Nosso sistema de design seria um conjunto de pecinhas padronizadas, que seguem a mesma consistência de design.';
+
+const Part3P2: PageType = function () {
+  return (
+    <Page background="3">
+      <Module>
+        <Row>
+          <Column>
+            <ChapterName>Exemplificando</ChapterName>
+          </Column>
+        </Row>
+        <Row horizontalAlignCenter>
+          <Column lg="80%">
+            <P color="black" size="large">
+              {CONTENT}
+            </P>
+          </Column>
+        </Row>
+        <Row>
+          <Column>
+            <ImageContainer 
+              imageAlt="" 
+              imageSrc={legoPieces}
+              heightInLg="404px"
+              heightInMb="404px"
+              widthInLg="700px"
+              widthInMb="700px"
+            />
+          </Column>
+        </Row>
+      </Module>
+    </Page>
+  );
+};
+
+export default Part3P2;

@@ -1,22 +1,27 @@
-import { FC } from 'react';
+import { ComponentType } from './types';
+import { ImgContainer, Image } from './styles';
 
-type PropsType = {
-  url: string,
-  alt: string,
-};
-
-import { Container } from './styles';
-
-const ImageContainer: FC<PropsType> = function (props) {
-  const {
-    url,
-    alt,
+const ImageContainer: ComponentType = function (props) {
+  const { 
+    imageAlt, 
+    imageSrc,
+    heightInLg,
+    heightInMb,
+    widthInLg,
+    widthInMb,
   } = props;
 
   return (
-    <Container>
-      <img src={url} alt={alt} />
-    </Container>
+    <ImgContainer>
+      <Image 
+        src={imageSrc} 
+        alt={imageAlt}
+        heightInLg={heightInLg}
+        heightInMb={heightInMb}
+        widthInLg={widthInLg}
+        widthInMb={widthInMb}
+      />      
+    </ImgContainer>
   );
 };
 

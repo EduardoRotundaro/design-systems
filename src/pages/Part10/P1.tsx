@@ -23,8 +23,8 @@ const Part10P1: PageType = function () {
   return (
     <Page background="2">
       <Module>
-        <Row className="name">
-          <Column>
+        <Row horizontalAlignCenter className="name">
+          <Column xs="60%" lg="90%">
             <ChapterName>Links interessantes</ChapterName>
           </Column>
         </Row>

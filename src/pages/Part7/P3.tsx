@@ -28,8 +28,8 @@ const Part7P3: PageType = function () {
   return (
     <Page background="2">
       <Module>
-        <Row className="name">
-          <Column>
+        <Row horizontalAlignCenter className="name">
+          <Column xs="60%" lg="90%">
             <ChapterName>Como começar?</ChapterName>
           </Column>
         </Row>

@@ -25,13 +25,13 @@ const Part1P3: PageType = function () {
   return (
     <Page background="4">
       <Module>
-        <Row className="name">
-          <Column>
+        <Row horizontalAlignCenter className="name">
+          <Column xs="60%" lg="90%">
             <ChapterName>O que é isso?</ChapterName>
           </Column>
         </Row>
-        <Row>
-          <Column>
+        <Row horizontalAlignCenter>
+          <Column xs="70%" lg="90%">
             <ImageContainer 
               imageAlt="" 
               imageSrc={designSystem}

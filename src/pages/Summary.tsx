@@ -29,8 +29,8 @@ const Summary: PageType = function (props) {
   return (
     <Page background="2">
       <Module>
-        <Row className="title">
-          <Column>
+        <Row horizontalAlignCenter className="title">
+          <Column xs="60%" lg="90%">
             <H3 color="black" weight="heavy">Conteúdo</H3>
           </Column>
         </Row>

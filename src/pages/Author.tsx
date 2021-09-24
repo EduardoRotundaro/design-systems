@@ -40,8 +40,8 @@ const Author: PageType = function () {
             <ProfileImage imageSrc={profilePhoto} profileName={AUTHOR} />
           </Column>
         </Row>
-        <Row className="social">
-          <Column>
+        <Row horizontalAlignCenter className="social">
+          <Column xs="70%" lg="90%">
             <SocialLinks links={[
               { ariaLabel: 'Contato pelo Linkedin', link: AUTHOR_LINKEDIN, type: 'linkedin' },
               { ariaLabel: 'Contato pelo Instagram', link: AUTHOR_INSTAGRAM, type: 'instagram' },

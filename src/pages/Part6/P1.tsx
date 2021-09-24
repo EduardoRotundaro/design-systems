@@ -30,8 +30,8 @@ const Part6P1: PageType = function () {
             <ChapterName>Os elementos que compõem um design system</ChapterName>
           </Column>
         </Row>
-        <Row>
-          <Column>
+        <Row horizontalAlignCenter>
+          <Column xs="70%" lg="90%">
             <ImageContainer 
               imageAlt="" 
               imageSrc={dsStructure}

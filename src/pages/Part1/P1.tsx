@@ -25,8 +25,8 @@ const Part1P1: PageType = function () {
   return (
     <Page background="1">
       <Module>
-        <Row className="name">
-          <Column>
+        <Row horizontalAlignCenter className="name">
+          <Column xs="60%" lg="90%">
             <ChapterName>O que é isso?</ChapterName>
           </Column>
         </Row>

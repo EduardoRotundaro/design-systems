@@ -34,8 +34,8 @@ const Part5P4: PageType = function () {
   return (
     <Page background="4">
       <Module>
-        <Row className="name">
-          <Column>
+        <Row horizontalAlignCenter className="name">
+          <Column xs="60%" lg="90%">
             <ChapterName>O atomic design</ChapterName>
           </Column>
         </Row>
@@ -46,8 +46,8 @@ const Part5P4: PageType = function () {
             </P>
           </Column>
         </Row>
-        <Row className="image">
-          <Column>
+        <Row horizontalAlignCenter className="image">
+          <Column xs="70%" lg="90%">
             <ImageContainer 
               imageAlt="" 
               imageSrc={atomicDesign}

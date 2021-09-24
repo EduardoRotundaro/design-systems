@@ -23,8 +23,8 @@ const Part2: PageType = function () {
   return (
     <Page background="5">
       <Module>
-        <Row>
-          <Column>
+        <Row horizontalAlignCenter>
+          <Column xs="60%" lg="90%">
             <ChapterNumber>02</ChapterNumber>
           </Column>
         </Row>

@@ -22,6 +22,6 @@ export const AUTHOR_GRADUATE_FROM: ConstantType = 'Instituto Nacional de Telecom
 
 export const CONTENT_NAME: ConstantType = 'Design Systems';
 
-export const CONTENT_DATE: ConstantType = 'Setembro/2021';
+export const CONTENT_DATE: ConstantType = 'Setembro de 2021';
 
 export const PROJECT_REPOSITORY: ConstantType = 'https://github.com/EduardoRotundaro/design-systems';

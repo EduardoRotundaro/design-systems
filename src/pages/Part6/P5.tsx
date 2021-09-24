@@ -22,7 +22,7 @@ const Module = styled.div`
   }
 `;
 
-const CONTENT = 'Se adequado aos projetos, design systems podem incluir padrões de códigos, como nome de classes, ids, indentação, formatação e organização. Um projeto de um sistema de vai lidar com a integração entre design e a parte de desenvolvimento front-end, por isso é importante que funcione como o esperado.';
+const CONTENT = 'Se adequado aos projetos, design systems podem incluir padrões de códigos, como nome de classes, ids, indentação, formatação e organização. O DS vai lidar com a integração entre design e a parte de desenvolvimento front-end, por isso é importante que funcione como o esperado.';
 
 const Part6P5: PageType = function () {
   return (

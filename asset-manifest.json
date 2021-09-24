@@ -1,23 +1,33 @@
 {
   "files": {
-    "main.css": "/design-systems/static/css/main.a617e044.chunk.css",
-    "main.js": "/design-systems/static/js/main.ff1b68ac.chunk.js",
-    "main.js.map": "/design-systems/static/js/main.ff1b68ac.chunk.js.map",
-    "runtime-main.js": "/design-systems/static/js/runtime-main.fa80eb9c.js",
-    "runtime-main.js.map": "/design-systems/static/js/runtime-main.fa80eb9c.js.map",
-    "static/js/2.d448be23.chunk.js": "/design-systems/static/js/2.d448be23.chunk.js",
-    "static/js/2.d448be23.chunk.js.map": "/design-systems/static/js/2.d448be23.chunk.js.map",
-    "static/js/3.a72fa3aa.chunk.js": "/design-systems/static/js/3.a72fa3aa.chunk.js",
-    "static/js/3.a72fa3aa.chunk.js.map": "/design-systems/static/js/3.a72fa3aa.chunk.js.map",
+    "main.css": "/design-systems/static/css/main.8bca34c5.chunk.css",
+    "main.js": "/design-systems/static/js/main.5f896b35.chunk.js",
+    "main.js.map": "/design-systems/static/js/main.5f896b35.chunk.js.map",
+    "runtime-main.js": "/design-systems/static/js/runtime-main.d15f8287.js",
+    "runtime-main.js.map": "/design-systems/static/js/runtime-main.d15f8287.js.map",
+    "static/js/2.641432a3.chunk.js": "/design-systems/static/js/2.641432a3.chunk.js",
+    "static/js/2.641432a3.chunk.js.map": "/design-systems/static/js/2.641432a3.chunk.js.map",
     "index.html": "/design-systems/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/design-systems/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.d448be23.chunk.js.LICENSE.txt": "/design-systems/static/js/2.d448be23.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/design-systems/static/media/logo.6ce24c58.svg"
+    "static/css/main.8bca34c5.chunk.css.map": "/design-systems/static/css/main.8bca34c5.chunk.css.map",
+    "static/js/2.641432a3.chunk.js.LICENSE.txt": "/design-systems/static/js/2.641432a3.chunk.js.LICENSE.txt",
+    "static/media/atomic-design-1.16b1a467.webp": "/design-systems/static/media/atomic-design-1.16b1a467.webp",
+    "static/media/atomic-design-2.61657ce9.webp": "/design-systems/static/media/atomic-design-2.61657ce9.webp",
+    "static/media/atomic-design-3.85025e8d.webp": "/design-systems/static/media/atomic-design-3.85025e8d.webp",
+    "static/media/atomic-design-4.a2a44ac9.webp": "/design-systems/static/media/atomic-design-4.a2a44ac9.webp",
+    "static/media/atomic-design-5.fa5f1f3d.webp": "/design-systems/static/media/atomic-design-5.fa5f1f3d.webp",
+    "static/media/atomic-design.da7062be.webp": "/design-systems/static/media/atomic-design.da7062be.webp",
+    "static/media/design-system.7fc5e5ff.webp": "/design-systems/static/media/design-system.7fc5e5ff.webp",
+    "static/media/pieces-lego.46395cd0.webp": "/design-systems/static/media/pieces-lego.46395cd0.webp",
+    "static/media/profile-1.c6296513.webp": "/design-systems/static/media/profile-1.c6296513.webp",
+    "static/media/profile-2.d53747d0.webp": "/design-systems/static/media/profile-2.d53747d0.webp",
+    "static/media/profile-3.70c6246e.webp": "/design-systems/static/media/profile-3.70c6246e.webp",
+    "static/media/project-lego.a3df1b70.webp": "/design-systems/static/media/project-lego.a3df1b70.webp",
+    "static/media/structure.10218d86.webp": "/design-systems/static/media/structure.10218d86.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.fa80eb9c.js",
-    "static/js/2.d448be23.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.ff1b68ac.chunk.js"
+    "static/js/runtime-main.d15f8287.js",
+    "static/js/2.641432a3.chunk.js",
+    "static/css/main.8bca34c5.chunk.css",
+    "static/js/main.5f896b35.chunk.js"
   ]
 }

@@ -9,6 +9,11 @@ import P from '../../components/P';
 import ChapterName from '../../components/ChapterName';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+  }
 `;
 
 const CONTENT = 'O Atomic design é uma metodologia criada por Brad Frost em 2013, que apresenta um paralelo entre a química e componentização de elementos de interface.';
@@ -17,7 +22,7 @@ const Part5P1: PageType = function () {
   return (
     <Page background="1">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>O atomic design</ChapterName>
           </Column>

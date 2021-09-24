@@ -9,6 +9,14 @@ import ChapterName from '../../components/ChapterName';
 import P from '../../components/P';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+    .legend {
+      padding-bottom: 10px;
+    }
+  }
 `;
 
 const CONTENT = 'Quais são os padrões da interface do usuário e os componentes de código necessários para criar produtos de maneira coerente em todos os dispositivos?';
@@ -17,12 +25,12 @@ const Part7P4: PageType = function () {
   return (
     <Page background="4">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Como começar?</ChapterName>
           </Column>
         </Row>
-        <Row horizontalAlignCenter>
+        <Row horizontalAlignCenter className="legend">
           <Column lg="80%">
             <P color="black" size="extra-large" weight="bolder">
               Components

@@ -12,6 +12,14 @@ import ChapterName from '../../components/ChapterName';
 import ImageContainer from '../../components/ImageContainer';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+    .image {
+      padding-top: 50px;
+    }
+  }
 `;
 
 const CONTENT = 'Na metodologia do atomic design, lidamos com os componentes de forma crescente, saindo do menor para o maior.';
@@ -20,7 +28,7 @@ const Part5P4: PageType = function () {
   return (
     <Page background="4">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>O atomic design</ChapterName>
           </Column>
@@ -32,7 +40,7 @@ const Part5P4: PageType = function () {
             </P>
           </Column>
         </Row>
-        <Row>
+        <Row className="image">
           <Column>
             <ImageContainer 
               imageAlt="" 

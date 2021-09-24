@@ -9,6 +9,11 @@ import P from '../../components/P';
 import ChapterName from '../../components/ChapterName';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+  }
 `;
 
 const CONTENT = 'É importante saber que DS não é um projeto, é um produto que será utilizado por outros produtos.';
@@ -17,7 +22,7 @@ const Part1P3: PageType = function () {
   return (
     <Page background="2">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>O que é isso?</ChapterName>
           </Column>

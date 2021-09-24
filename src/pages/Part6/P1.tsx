@@ -11,13 +11,18 @@ import ChapterName from '../../components/ChapterName';
 import ImageContainer from '../../components/ImageContainer';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+  }
 `;
 
 const Part6P1: PageType = function () {
   return (
     <Page background="1">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Os elementos que compõem um design system</ChapterName>
           </Column>

@@ -12,6 +12,14 @@ import ChapterName from '../../components/ChapterName';
 import ImageContainer from '../../components/ImageContainer';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+    .image {
+      padding-top: 50px;
+    }
+  }
 `;
 
 const CONTENT = 'Pensar em design systems é como pensar em LEGOs. Imagine um projeto novo como algo a ser criado com peças de LEGO.';
@@ -20,7 +28,7 @@ const Part3P1: PageType = function () {
   return (
     <Page background="1">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Exemplificando</ChapterName>
           </Column>
@@ -32,7 +40,7 @@ const Part3P1: PageType = function () {
             </P>
           </Column>
         </Row>
-        <Row horizontalAlignCenter>
+        <Row className="image">
           <Column>
             <ImageContainer 
               imageAlt="" 

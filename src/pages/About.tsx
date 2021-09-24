@@ -19,7 +19,16 @@ import P from '../components/P';
 import Thumbnail from '../components/Thumbnail';
 import AboutItem from '../components/AboutItem';
 
-const Module = styled.div``;
+const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding: 30px 0px;
+    }
+    .item {
+      padding: 10px 0px;
+    }
+  }
+`;
 
 const About: PageType = function () {
   return (
@@ -33,7 +42,7 @@ const About: PageType = function () {
             <Thumbnail imageAlt="" imageSrc={profilePhoto2} />
           </Column>
         </Row>
-        <Row>
+        <Row className="name">
           <Column>
             <P color="white" weight="bold" size="extra-large">
               {AUTHOR_FULL}
@@ -41,16 +50,16 @@ const About: PageType = function () {
           </Column>
         </Row>
         <Row>
-          <Column>
+          <Column className="item">
             <AboutItem text={AUTHOR_AGE} icon="age" />
           </Column>
-          <Column>
+          <Column className="item">
             <AboutItem text={AUTHOR_LOCATION} icon="location" />
           </Column>
-          <Column>
+          <Column className="item">
             <AboutItem text={AUTHOR_GRADUATION} icon="graduation" />
           </Column>
-          <Column>
+          <Column className="item">
             <AboutItem text={AUTHOR_GRADUATE_FROM} icon="college" />
           </Column>
         </Row>

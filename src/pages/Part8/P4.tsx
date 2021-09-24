@@ -9,6 +9,14 @@ import ChapterName from '../../components/ChapterName';
 import P from '../../components/P';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+    .legend {
+      padding-bottom: 10px;
+    }
+  }
 `;
 
 const CONTENT = 'O Design System é único para toda a empresa. Criar uma documentação acessível e alocar a ferramenta em um local acessível para todos.';
@@ -17,12 +25,12 @@ const Part8P4: PageType = function () {
   return (
     <Page background="4">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Guia rápido</ChapterName>
           </Column>
         </Row>
-        <Row horizontalAlignCenter>
+        <Row horizontalAlignCenter className="legend">
           <Column lg="80%">
             <P color="black" size="extra-large" weight="bolder">
               Documentação

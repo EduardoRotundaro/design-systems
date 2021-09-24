@@ -9,6 +9,11 @@ import P from '../../components/P';
 import ChapterName from '../../components/ChapterName';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+  }
 `;
 
 const CONTENT = 'Falando de produtos digitais (um app ou um site), é comum encontrar problemas na projeção no controle de novas funcionalidades.';
@@ -17,7 +22,7 @@ const Part2P1: PageType = function () {
   return (
     <Page background="1">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Pra que isso?</ChapterName>
           </Column>

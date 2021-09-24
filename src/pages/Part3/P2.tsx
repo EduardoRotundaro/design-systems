@@ -12,6 +12,14 @@ import ChapterName from '../../components/ChapterName';
 import ImageContainer from '../../components/ImageContainer';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+    .image {
+      padding-top: 50px;
+    }
+  }
 `;
 
 const CONTENT = 'Nosso sistema de design seria um conjunto de pecinhas padronizadas, que seguem a mesma consistência de design.';
@@ -20,7 +28,7 @@ const Part3P2: PageType = function () {
   return (
     <Page background="3">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Exemplificando</ChapterName>
           </Column>
@@ -32,7 +40,7 @@ const Part3P2: PageType = function () {
             </P>
           </Column>
         </Row>
-        <Row>
+        <Row className="image">
           <Column>
             <ImageContainer 
               imageAlt="" 

@@ -9,6 +9,14 @@ import P from '../../components/P';
 import ChapterName from '../../components/ChapterName';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+    .legend {
+      padding-bottom: 10px;
+    }
+  }
 `;
 
 const CONTENT = 'Qual é o propósito e a alma por trás de todos os produtos?';
@@ -17,12 +25,12 @@ const Part7P1: PageType = function () {
   return (
     <Page background="1">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Como começar?</ChapterName>
           </Column>
         </Row>
-        <Row horizontalAlignCenter>
+        <Row horizontalAlignCenter className="legend">
           <Column lg="80%">
             <P color="black" size="extra-large" weight="bolder">
               Product principles

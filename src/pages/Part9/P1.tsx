@@ -9,6 +9,11 @@ import P from '../../components/P';
 import ChapterName from '../../components/ChapterName';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+  }
 `;
 
 const CONTENT = 'A ideia é que o Design System seja um documento que garanta uma melhor consistência nos produtos, e que dialogue com todas as áreas envolvidas e não somente a parte visual.';
@@ -17,7 +22,7 @@ const Part9P1: PageType = function () {
   return (
     <Page background="1">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Considerações finais</ChapterName>
           </Column>

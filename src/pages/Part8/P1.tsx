@@ -9,6 +9,14 @@ import P from '../../components/P';
 import ChapterName from '../../components/ChapterName';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+    .legend {
+      padding-bottom: 10px;
+    }
+  }
 `;
 
 const CONTENT = 'Conhecer a marca e quais são os valores que estão envolvidos e as pessoas que fazem parte dentro dessa organização. É bom olhar os projetos e produtos existentes, e como eles vão ser afetados nessa criação inicial do design system.';
@@ -17,12 +25,12 @@ const Part8P1: PageType = function () {
   return (
     <Page background="1">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Guia rápido</ChapterName>
           </Column>
         </Row>
-        <Row horizontalAlignCenter>
+        <Row horizontalAlignCenter className="legend">
           <Column lg="80%">
             <P color="black" size="extra-large" weight="bolder">
               Discovery

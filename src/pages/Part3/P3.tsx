@@ -9,6 +9,14 @@ import P from '../../components/P';
 import ChapterName from '../../components/ChapterName';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+    .paragraph {
+      padding-bottom: 20px;
+    }
+  }
 `;
 
 const CONTENT_1 = 'Cada pecinha representaria um componente.';
@@ -20,26 +28,26 @@ const Part3P3: PageType = function () {
   return (
     <Page background="2">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Exemplificando</ChapterName>
           </Column>
         </Row>
-        <Row horizontalAlignCenter>
+        <Row horizontalAlignCenter className="paragraph">
           <Column lg="80%">
             <P color="black" size="large">
               {CONTENT_1}
             </P>
           </Column>
         </Row>
-        <Row horizontalAlignCenter>
+        <Row horizontalAlignCenter className="paragraph">
           <Column lg="80%">
             <P color="black" size="large">
               {CONTENT_2}
             </P>
           </Column>
         </Row>
-        <Row horizontalAlignCenter>
+        <Row horizontalAlignCenter className="paragraph">
           <Column lg="80%">
             <P color="black" size="large">
               {CONTENT_3}

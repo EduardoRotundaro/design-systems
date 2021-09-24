@@ -20,7 +20,7 @@ const SocialLinks: ComponentType = function (props) {
           href={config.link} 
           aria-label={config.ariaLabel} 
           target="_blank" 
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           {config.type === 'github' && (
             <GithubIcon />

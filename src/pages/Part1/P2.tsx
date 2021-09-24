@@ -9,6 +9,11 @@ import P from '../../components/P';
 import ChapterName from '../../components/ChapterName';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+  }
 `;
 
 const CONTENT = 'Geralmente contém coleções de documentos, artigos, exemplos, trechos de códigos, prints, instruções de design, e vários outros conteúdos digitais, além de apenas componentes.';
@@ -17,7 +22,7 @@ const Part1P2: PageType = function () {
   return (
     <Page background="3">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>O que é isso?</ChapterName>
           </Column>

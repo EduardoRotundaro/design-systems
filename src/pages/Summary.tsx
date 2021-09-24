@@ -4,11 +4,17 @@ import { PageType } from './types';
 
 import Page from '../Page';
 import Row from '../components/Row';
-import H2 from '../components/H2';
+import H3 from '../components/H3';
 import Column from '../components/Column';
 import SummaryList from '../components/Summary';
 
-const Module = styled.div``;
+const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .title {
+      padding-bottom: 10px;
+    }
+  }
+`;
 
 const Summary: PageType = function (props) {
   const { pageSetter } = props;
@@ -20,9 +26,9 @@ const Summary: PageType = function (props) {
   return (
     <Page background="2">
       <Module>
-        <Row>
+        <Row className="title">
           <Column>
-            <H2 color="black" weight="heavy">Conteúdo</H2>
+            <H3 color="black" weight="heavy">Conteúdo</H3>
           </Column>
         </Row>
         <Row horizontalAlignCenter>
@@ -38,7 +44,6 @@ const Summary: PageType = function (props) {
               { text: 'Guia rápido', action: () => setPage(47) },
               { text: 'Considerações finais', action: () => setPage(52) },
               { text: 'Links interessantes', action: () => setPage(56) },
-              { text: 'Que site é esse aqui?', action: () => setPage(58) },
             ]}/>
           </Column>
         </Row>

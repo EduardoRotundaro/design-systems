@@ -12,6 +12,17 @@ import ChapterName from '../../components/ChapterName';
 import ImageContainer from '../../components/ImageContainer';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+    .legend {
+      padding-bottom: 10px;
+    }
+    .image {
+      padding-top: 50px;
+    }
+  }
 `;
 
 const CONTENT = 'Já essa etapa seria mais próximo do produto pronto final, sendo mais completo do que um template';
@@ -20,12 +31,12 @@ const Part5P9: PageType = function () {
   return (
     <Page background="1">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>O atomic design</ChapterName>
           </Column>
         </Row>
-        <Row horizontalAlignCenter>
+        <Row horizontalAlignCenter className="legend">
           <Column lg="80%">
             <P color="black" size="extra-large" weight="bolder">
               Páginas
@@ -39,7 +50,7 @@ const Part5P9: PageType = function () {
             </P>
           </Column>
         </Row>
-        <Row>
+        <Row className="image">
           <Column>
             <ImageContainer 
               imageAlt="" 

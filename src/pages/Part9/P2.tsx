@@ -9,6 +9,11 @@ import ChapterName from '../../components/ChapterName';
 import P from '../../components/P';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+  }
 `;
 
 const CONTENT = 'É uma ferramenta viva que evolui conforme o desenvolvimento e amadurecimento dos projetos de UX Design de uma empresa.';
@@ -17,7 +22,7 @@ const Part9P2: PageType = function () {
   return (
     <Page background="3">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Considerações finais</ChapterName>
           </Column>

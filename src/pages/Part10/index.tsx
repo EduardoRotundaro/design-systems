@@ -9,6 +9,11 @@ import H1 from '../../components/H1';
 import ChapterNumber from '../../components/ChapterNumber';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .title {
+      padding: 40px 0px;
+    }
+  }
 `;
 
 const Part10: PageType = function () {
@@ -20,7 +25,7 @@ const Part10: PageType = function () {
             <ChapterNumber>10</ChapterNumber>
           </Column>
         </Row>
-        <Row>
+        <Row className="title">
           <Column>
             <H1 color="white" weight="heavy">Links interessantes</H1>
           </Column>

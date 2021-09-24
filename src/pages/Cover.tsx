@@ -12,14 +12,20 @@ import Column from '../components/Column';
 import H1 from '../components/H1';
 import P from '../components/P';
 
-const Module = styled.div``;
+const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .title {
+      padding-bottom: 20px;
+    }
+  }
+`;
 
 const Cover: PageType = function () {
   return (
     <Page background="5">
       <Module>
         <Row>
-          <Column>
+          <Column className="title">
             <H1 weight="heavy">{CONTENT_NAME}</H1>
           </Column>
           <Column>

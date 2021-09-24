@@ -11,13 +11,18 @@ import ChapterName from '../../components/ChapterName';
 import ImageContainer from '../../components/ImageContainer';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+  }
 `;
 
 const Part1P3: PageType = function () {
   return (
     <Page background="4">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>O que é isso?</ChapterName>
           </Column>

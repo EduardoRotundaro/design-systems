@@ -20,6 +20,12 @@ const Module = styled.div`
   .profile {
     z-index: 0;
   }
+
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .social {
+      padding-top: 80px;
+    }
+  }
 `;
 
 const Author: PageType = function () {
@@ -31,7 +37,7 @@ const Author: PageType = function () {
             <ProfileImage imageSrc={profilePhoto} profileName={AUTHOR} />
           </Column>
         </Row>
-        <Row>
+        <Row className="social">
           <Column>
             <SocialLinks links={[
               { ariaLabel: 'Contato pelo Linkedin', link: AUTHOR_LINKEDIN, type: 'linkedin' },

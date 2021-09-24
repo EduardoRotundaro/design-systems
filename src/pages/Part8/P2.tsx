@@ -9,6 +9,14 @@ import ChapterName from '../../components/ChapterName';
 import P from '../../components/P';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+    .legend {
+      padding-bottom: 10px;
+    }
+  }
 `;
 
 const CONTENT = 'Depois de absorver e ouvir designers, stakeholders e usuários, reunir os dados para construção dos pilares (princípios) do seu design system.';
@@ -17,12 +25,12 @@ const Part8P2: PageType = function () {
   return (
     <Page background="3">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Guia rápido</ChapterName>
           </Column>
         </Row>
-        <Row horizontalAlignCenter>
+        <Row horizontalAlignCenter className="legend">
           <Column lg="80%">
             <P color="black" size="extra-large" weight="bolder">
               Design

@@ -9,6 +9,11 @@ import P from '../../components/P';
 import ChapterName from '../../components/ChapterName';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+  }
 `;
 
 const CONTENT = 'É disponibilizado para toda a equipe (do design ao desenvolvimento) para que, além de tudo, possa garantir uniformidade na experiência final do usuário.';
@@ -17,7 +22,7 @@ const Part2P6: PageType = function () {
   return (
     <Page background="3">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Pra que isso?</ChapterName>
           </Column>

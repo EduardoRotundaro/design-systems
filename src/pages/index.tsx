@@ -58,8 +58,7 @@ import Part9P2 from './Part9/P2';
 import Part9P3 from './Part9/P3';
 import Part10 from './Part10';
 import Part10P1 from './Part10/P1';
-import Part11 from './Part11';
-import Part11P1 from './Part11/P1';
+import Thanks from './Thanks';
 
 export const getPage: PageGetterType = function (props) {
   const { pageIndex, pageSetter } = props;
@@ -122,10 +121,9 @@ export const getPage: PageGetterType = function (props) {
   if (pageIndex === 55) return <Part9P3 />;
   if (pageIndex === 56) return <Part10 />;
   if (pageIndex === 57) return <Part10P1 />;
-  if (pageIndex === 58) return <Part11 />;
-  if (pageIndex === 59) return <Part11P1 />;
+  if (pageIndex === 58) return <Thanks />;
 
   return <div></div>;
 };
 
-export const pagesLength = 61;
+export const pagesLength = 59;

@@ -9,6 +9,11 @@ import P from '../../components/P';
 import ChapterName from '../../components/ChapterName';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+  }
 `;
 
 const CONTENT = 'Pattern library representa um repositório de componentes de UI Design, e um style guide representa uma diretriz sobre a parte visual da interface.';
@@ -17,7 +22,7 @@ const Part4P4: PageType = function () {
   return (
     <Page background="4">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Não é um style guide ou um pattern library?</ChapterName>
           </Column>

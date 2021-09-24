@@ -9,6 +9,14 @@ import ChapterName from '../../components/ChapterName';
 import P from '../../components/P';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+    .legend {
+      padding-bottom: 10px;
+    }
+  }
 `;
 
 const CONTENT = 'Alinhar as expectativas com os desenvolvedores, que irão materializar esses componentes, codificando e definindo questões técnicas para seu compartilhamento.';
@@ -17,12 +25,12 @@ const Part8P3: PageType = function () {
   return (
     <Page background="2">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Guia rápido</ChapterName>
           </Column>
         </Row>
-        <Row horizontalAlignCenter>
+        <Row horizontalAlignCenter className="legend">
           <Column lg="80%">
             <P color="black" size="extra-large" weight="bolder">
               Desenvolvimento

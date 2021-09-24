@@ -9,6 +9,11 @@ import P from '../../components/P';
 import ChapterName from '../../components/ChapterName';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+  }
 `;
 
 const CONTENT = 'Design systems são ecossistemas de bibliotecas intaláveis, com componentes programados, padrões semânticos de design, e que reune padrões de comportamento.';
@@ -17,7 +22,7 @@ const Part1P1: PageType = function () {
   return (
     <Page background="1">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>O que é isso?</ChapterName>
           </Column>

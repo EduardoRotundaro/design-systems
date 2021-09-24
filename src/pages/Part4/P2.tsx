@@ -9,6 +9,11 @@ import P from '../../components/P';
 import ChapterName from '../../components/ChapterName';
 
 const Module = styled.div`
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      padding-bottom: 50px;
+    }
+  }
 `;
 
 const CONTENT = 'É um conjunto completo de padrões do projeto, documentação e princípios, juntamente com um kit de ferramentas de design e código.';
@@ -17,7 +22,7 @@ const Part4P2: PageType = function () {
   return (
     <Page background="3">
       <Module>
-        <Row>
+        <Row className="name">
           <Column>
             <ChapterName>Não é um style guide ou um pattern library?</ChapterName>
           </Column>

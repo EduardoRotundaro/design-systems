@@ -9,9 +9,9 @@ export const Container = styled.div<PropsType>`
   position: absolute;
   top: 45%;
   ${props => {
-    if (props.left) return css`left: 20px;`;
-    else return css`right: 20px;`;
-  }}
+    if (props.left) return css`left: 10px;`;
+    else return css`right: 10px;`;
+  }};
   &>div{
     position: relative;
     display: flex;
@@ -54,6 +54,13 @@ export const Container = styled.div<PropsType>`
       pointer-events: auto;
     }
   }
+
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    ${props => {
+      if (props.left) return css`left: 20px;`;
+      else return css`right: 20px;`;
+    }}
+  }
 `;
 
 export const Button = styled.button`
@@ -69,4 +76,8 @@ export const Button = styled.button`
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
   cursor: pointer;
+
+  @media (max-width: ${props => props.theme.breakpoints.large}) {
+    transform: scale(0.8);
+  }
 `;

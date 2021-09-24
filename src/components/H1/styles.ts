@@ -24,7 +24,10 @@ export const Heading1 = styled.h1<ElementPropsType>`
     if (props.align === 'right') return 'right';
     return 'center';
   }};
-  
+  font-size: 4rem;
+  word-wrap: break-word;
+  word-break: break-word;
+
   @media (min-width: ${props => props.theme.breakpoints.large}) {
     font-size: 6rem;
   }

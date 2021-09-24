@@ -24,6 +24,12 @@ export const Paragraph = styled.p<ElementPropsType>`
     if (props.align === 'right') return 'right';
     return 'center';
   }};
+  font-size: ${props => {
+    if (props.size === 'small') return '1.2rem';
+    if (props.size === 'large') return '1.7rem';
+    if (props.size === 'extra-large') return '2rem';
+    return '1.4rem';
+  }};
 
   @media (min-width: ${props => props.theme.breakpoints.large}) {
     font-size: ${props => {

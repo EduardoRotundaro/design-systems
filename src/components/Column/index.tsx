@@ -4,7 +4,7 @@ import { Col } from './styles';
 
 type PropsType = {
   children?: ReactNode,
-  common?: string,
+  xs?: string,
   lg?: string,
   className?: string,
 };
@@ -13,12 +13,12 @@ const Column: FC<PropsType> = function (props) {
   const {
     children,
     className,
-    common,
+    xs,
     lg,
   } = props;
 
   return (
-    <Col className={className || ''} common={common} lg={lg}>
+    <Col className={className || ''} xs={xs} lg={lg}>
       {children}
     </Col>
   );

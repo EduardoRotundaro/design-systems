@@ -12,6 +12,12 @@ import ChapterName from '../../components/ChapterName';
 import ImageContainer from '../../components/ImageContainer';
 
 const Module = styled.div`
+  .name {
+    padding-bottom: 30px;
+  }
+  .image {
+    padding-top: 30px;
+  }
   @media (min-width: ${props => props.theme.breakpoints.large}) {
     .name {
       padding-bottom: 50px;
@@ -37,14 +43,14 @@ const Part5P8: PageType = function () {
           </Column>
         </Row>
         <Row horizontalAlignCenter className="legend">
-          <Column lg="80%">
+          <Column xs="60%" lg="80%">
             <P color="black" size="extra-large" weight="bolder">
               Temlplates
             </P>
           </Column>
         </Row>
         <Row horizontalAlignCenter>
-          <Column lg="80%">
+          <Column xs="60%" lg="80%">
             <P color="black" size="large">
               {CONTENT}
             </P>
@@ -56,9 +62,9 @@ const Part5P8: PageType = function () {
               imageAlt="" 
               imageSrc={atomicDesign}
               heightInLg="230px"
-              heightInMb="230px"
+              heightInMb="66px"
               widthInLg="700px"
-              widthInMb="700px"
+              widthInMb="200px"
             />
           </Column>
         </Row>

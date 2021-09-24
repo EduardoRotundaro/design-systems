@@ -20,6 +20,12 @@ import Thumbnail from '../components/Thumbnail';
 import AboutItem from '../components/AboutItem';
 
 const Module = styled.div`
+  .name {
+    padding: 10px 0px;
+  }
+  .item {
+    padding: 5px 0px;
+  }
   @media (min-width: ${props => props.theme.breakpoints.large}) {
     .name {
       padding: 30px 0px;
@@ -35,31 +41,35 @@ const About: PageType = function () {
     <Page background="black">
       <Module>
         <Row horizontalAlignCenter>
-          <Column lg="320px">
-            <Thumbnail imageAlt="" imageSrc={profilePhoto1} />
-          </Column>
-          <Column lg="320px">
-            <Thumbnail imageAlt="" imageSrc={profilePhoto2} />
+          <Column xs="60%" lg="90%">
+            <Row horizontalAlignCenter>
+              <Column xs="170px" lg="320px">
+                <Thumbnail imageAlt="" imageSrc={profilePhoto1} />
+              </Column>
+              <Column xs="170px" lg="320px">
+                <Thumbnail imageAlt="" imageSrc={profilePhoto2} />
+              </Column>
+            </Row>
           </Column>
         </Row>
-        <Row className="name">
-          <Column>
+        <Row horizontalAlignCenter className="name">
+          <Column xs="60%" lg="90%">
             <P color="white" weight="bold" size="extra-large">
               {AUTHOR_FULL}
             </P>
           </Column>
         </Row>
-        <Row>
-          <Column className="item">
+        <Row horizontalAlignCenter>
+          <Column xs="60%" lg="100%" className="item">
             <AboutItem text={AUTHOR_AGE} icon="age" />
           </Column>
-          <Column className="item">
+          <Column xs="60%" lg="100%" className="item">
             <AboutItem text={AUTHOR_LOCATION} icon="location" />
           </Column>
-          <Column className="item">
+          <Column xs="60%" lg="100%" className="item">
             <AboutItem text={AUTHOR_GRADUATION} icon="graduation" />
           </Column>
-          <Column className="item">
+          <Column xs="60%" lg="100%" className="item">
             <AboutItem text={AUTHOR_GRADUATE_FROM} icon="college" />
           </Column>
         </Row>

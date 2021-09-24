@@ -9,6 +9,12 @@ import P from '../../components/P';
 import ChapterName from '../../components/ChapterName';
 
 const Module = styled.div`
+  .name {
+    padding-bottom: 30px;
+  }
+  .paragraph {
+    padding-bottom: 10px;
+  }
   @media (min-width: ${props => props.theme.breakpoints.large}) {
     .name {
       padding-bottom: 50px;
@@ -34,28 +40,28 @@ const Part3P3: PageType = function () {
           </Column>
         </Row>
         <Row horizontalAlignCenter className="paragraph">
-          <Column lg="80%">
+          <Column xs="60%" lg="80%">
             <P color="black" size="large">
               {CONTENT_1}
             </P>
           </Column>
         </Row>
         <Row horizontalAlignCenter className="paragraph">
-          <Column lg="80%">
+          <Column xs="60%" lg="80%">
             <P color="black" size="large">
               {CONTENT_2}
             </P>
           </Column>
         </Row>
         <Row horizontalAlignCenter className="paragraph">
-          <Column lg="80%">
+          <Column xs="60%" lg="80%">
             <P color="black" size="large">
               {CONTENT_3}
             </P>
           </Column>
         </Row>
         <Row horizontalAlignCenter>
-          <Column lg="80%">
+          <Column xs="60%" lg="80%">
             <P color="black" size="large">
               {CONTENT_4}
             </P>

@@ -9,6 +9,9 @@ import H1 from '../../components/H1';
 import ChapterNumber from '../../components/ChapterNumber';
 
 const Module = styled.div`
+  .title {
+    padding: 10px 0px;
+  }
   @media (min-width: ${props => props.theme.breakpoints.large}) {
     .title {
       padding: 40px 0px;
@@ -25,8 +28,8 @@ const Part6: PageType = function () {
             <ChapterNumber>06</ChapterNumber>
           </Column>
         </Row>
-        <Row className="title">
-          <Column>
+        <Row horizontalAlignCenter className="title">
+          <Column xs="60%" lg="90%">
             <H1 color="white" weight="heavy">Os elementos que compõem um design system</H1>
           </Column>
         </Row>

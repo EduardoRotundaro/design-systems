@@ -20,6 +20,9 @@ const Module = styled.div`
   .profile {
     z-index: 0;
   }
+  .social {
+    padding-top: 30px;
+  }
 
   @media (min-width: ${props => props.theme.breakpoints.large}) {
     .social {
@@ -32,8 +35,8 @@ const Author: PageType = function () {
   return (
     <Page background="black">
       <Module>
-        <Row>
-          <Column className="profile">
+        <Row horizontalAlignCenter>
+          <Column xs="60%" lg="100%" className="profile">
             <ProfileImage imageSrc={profilePhoto} profileName={AUTHOR} />
           </Column>
         </Row>

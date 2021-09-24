@@ -11,6 +11,9 @@ import ChapterName from '../../components/ChapterName';
 import ImageContainer from '../../components/ImageContainer';
 
 const Module = styled.div`
+  .name {
+    padding-bottom: 30px;
+  }
   @media (min-width: ${props => props.theme.breakpoints.large}) {
     .name {
       padding-bottom: 50px;
@@ -33,9 +36,9 @@ const Part1P3: PageType = function () {
               imageAlt="" 
               imageSrc={designSystem}
               heightInLg="675px"
-              heightInMb="675px"
+              heightInMb="193px"
               widthInLg="700px"
-              widthInMb="700px"
+              widthInMb="200px"
             />
           </Column>
         </Row>

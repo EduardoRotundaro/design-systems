@@ -17,6 +17,9 @@ export const Badge = styled.span`
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
 
   @media (min-width: ${props => props.theme.breakpoints.large}) {
     height: 100px;

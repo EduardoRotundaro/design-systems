@@ -14,7 +14,7 @@ const THanks: PageType = function () {
     <Page background="5">
       <Module>
         <Row horizontalAlignCenter>
-          <Column lg="40%">
+          <Column xs="60%" lg="40%">
             <ThanksMessage />
           </Column>
         </Row>

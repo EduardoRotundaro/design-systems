@@ -9,8 +9,8 @@ export const Social = styled.div`
 
 export const SocialItem = styled.a<ContactItemProps>`
   text-decoration: none !important;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,6 +31,8 @@ export const SocialItem = styled.a<ContactItemProps>`
     position: relative;
     z-index: 3;
     transition: transform 0.2s linear 0s;
+    width: 26px;
+    height: 26px;
   }
 
   &:hover {
@@ -41,6 +43,16 @@ export const SocialItem = styled.a<ContactItemProps>`
 
     svg {
       transform: rotate(90deg);
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    width: 60px;
+    height: 60px;
+
+    svg {
+      width: 32px;
+      height: 32px;
     }
   }
 `;

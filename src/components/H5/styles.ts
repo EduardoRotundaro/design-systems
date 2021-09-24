@@ -24,6 +24,7 @@ export const Heading5 = styled.h5<ElementPropsType>`
     if (props.align === 'right') return 'right';
     return 'center';
   }};
+  font-size: 2rem;
   
   @media (min-width: ${props => props.theme.breakpoints.large}) {
     font-size: 4rem;

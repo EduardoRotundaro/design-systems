@@ -9,6 +9,9 @@ import Links from '../../components/Links';
 import ChapterName from '../../components/ChapterName';
 
 const Module = styled.div`
+  .name {
+    padding-bottom: 30px;
+  }
   @media (min-width: ${props => props.theme.breakpoints.large}) {
     .name {
       padding-bottom: 50px;
@@ -26,7 +29,7 @@ const Part10P1: PageType = function () {
           </Column>
         </Row>
         <Row horizontalAlignCenter>
-          <Column lg="90%">
+          <Column xs="60%" lg="90%">
             <Links items={[
               { text: 'Artigo detalhado sobre o funcionamento de um design system e suas vantagens.', link: 'https://medium.com/aela/design-system-como-funciona-e-porque-us%C3%A1-lo-edc31029f337' },
               { text: 'Construindo uma linguagem visual, por Airbnb.', link: 'https://airbnb.design/building-a-visual-language/' },

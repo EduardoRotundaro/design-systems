@@ -40,7 +40,7 @@ export const Content = styled.div`
 `;
 
 export const Block = styled.div`
-  padding: 50px 0px;
+  padding: 30px 0px;
   width: 100%;
 
   @media (min-width: ${props => props.theme.breakpoints.large}) {

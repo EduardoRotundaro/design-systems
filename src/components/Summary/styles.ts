@@ -9,6 +9,7 @@ export const ListItem = styled.li`
   justify-content: space-between;
   align-items: center;
   border-radius: 50px;
+  padding: 5px 0px;
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -35,15 +36,22 @@ export const Content = styled.div`
     background: -webkit-linear-gradient(to right, #434343, #000000);
     background: linear-gradient(to right, #434343, #000000);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
+    font-size: 12px;
+    margin-right: 8px;
   }
 
   div {
     font-family: ${props => props.theme.fonts.primary};
     color: ${props => props.theme.colors.white};
     font-weight: 600;
+    font-size: 1.6rem;
   }
 
   @media (min-width: ${props => props.theme.breakpoints.large}) {
+    padding-left: 5px;
     span {
       height: 50px;
       width: 50px;
@@ -73,6 +81,8 @@ export const Action = styled.div`
     }
 
     svg {
+      height: 20px;
+      width: 20px;
       path {
         fill: ${props => props.theme.colors.black};
       }
@@ -83,8 +93,11 @@ export const Action = styled.div`
         fill: ${props => props.theme.colors.white};
       }
     }
-    
-    @media (min-width: ${props => props.theme.breakpoints.large}) {
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    padding-right: 5px;
+    button {
       b {
         font-size: 14px;
         margin-right: 5px;
@@ -92,6 +105,15 @@ export const Action = styled.div`
       svg {
         height: 22px;
         width: 22px;
+      }
+    }
+  }
+
+  @media (max-width: ${props => props.theme.breakpoints.large}) {
+    padding-left: 10px;
+    button {
+      b {
+        display: none;
       }
     }
   }

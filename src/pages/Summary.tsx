@@ -9,6 +9,9 @@ import Column from '../components/Column';
 import SummaryList from '../components/Summary';
 
 const Module = styled.div`
+  .title {
+    padding-bottom: 20px;
+  }
   @media (min-width: ${props => props.theme.breakpoints.large}) {
     .title {
       padding-bottom: 10px;
@@ -32,7 +35,7 @@ const Summary: PageType = function (props) {
           </Column>
         </Row>
         <Row horizontalAlignCenter>
-          <Column lg="80%">
+          <Column xs="60%" lg="80%">
             <SummaryList items={[
               { text: 'O que é isso?', action: () => setPage(4) },
               { text: 'Pra que isso?', action: () => setPage(9) },

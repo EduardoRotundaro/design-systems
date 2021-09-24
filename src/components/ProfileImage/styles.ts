@@ -8,8 +8,8 @@ export const ComponentContainer = styled.div`
 
 export const Card = styled.div`
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background: #fff;
   margin: 0 auto;
   border-radius: 4px;
@@ -86,6 +86,17 @@ export const Card = styled.div`
         display: block;
         margin-top: 5px;
       }
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.large}) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (max-width: ${props => props.theme.breakpoints.large}) {
+    .name {
+      display: none;
     }
   }
 `;
